@@ -9,17 +9,32 @@ html,body {
     margin-right: auto;
 }
 
-.global-title {
-    text-shadow: 1px 1px black;
+.is-info {
+    background: #f16b6c !important;
+}
+
+.has-background-yellow {
+    background: #ffd64f !important;
+    color: #000000 !important;
+}
+
+.yellow {
+    color: #ffd64f;
+}
+
+.shadow {
+    text-shadow: 1px 1px 1px black;
 }
 
 .navbar.is-white {
     background: #F0F2F4;
 }
+
 .navbar-brand .brand-text {
     font-size: 1.11rem;
     font-weight: bold;
 }
+
 .header-image {
     background-image: url(https://picsum.photos/1400/500);
     background-position: center;
