@@ -34,6 +34,7 @@ button.is-link.has-background-alt,  button.is-link.has-background-alt:hover {
 }
 
 .header-image {
+    background-color: var(--mainColor);
     background-image: url(https://picsum.photos/1400/500);
     background-position: center;
     background-size: cover;
