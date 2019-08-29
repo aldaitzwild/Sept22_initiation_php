@@ -1,7 +1,14 @@
-html,body {
+:root {
+    --mainColor:#f16b6c;
+    --secondaryColor:#ffd64f;
+    --darkColor:#262626;
+    --lightColor:#F0F2F4;
+}
+
+html, body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    background: #F0F2F4;
+    background: var(--lightColor);
 }
 
 .has-image-centered {
@@ -9,33 +16,25 @@ html,body {
     margin-right: auto;
 }
 
-.is-info {
-    background: #f16b6c !important;
+.tag:not(body).is-info {
+    background: var(--mainColor);
 }
 
-.has-background-yellow {
-    background: #ffd64f !important;
-    color: #000000 !important;
+button.is-link.has-background-alt,  button.is-link.has-background-alt:hover {
+    background: var(--secondaryColor) ;
+    color: var(--darkColor);
 }
 
-.yellow {
-    color: #ffd64f;
+.wcs-link {
+    color: var(--secondaryColor);
 }
 
 .shadow {
-    text-shadow: 1px 1px 1px black;
-}
-
-.navbar.is-white {
-    background: #F0F2F4;
-}
-
-.navbar-brand .brand-text {
-    font-size: 1.11rem;
-    font-weight: bold;
+    text-shadow: 1px 1px 1px var(--darkColor);
 }
 
 .header-image {
+    background-color: var(--mainColor);
     background-image: url(https://picsum.photos/1400/500);
     background-position: center;
     background-size: cover;
@@ -59,20 +58,7 @@ html,body {
     line-height: 1.9;
     margin: 15px 0;
 }
-.author-image {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    width: 60px;
-    height: 60px;
-    margin-left: -30px;
-    border: 3px solid #ccc;
-    border-radius: 50%;
-}
-.media-center {
-    display: block;
-    margin-bottom: 1rem;
-}
+
 .media-content {
     margin-top: 3rem;
 }
@@ -88,10 +74,7 @@ div.column.is-8:first-child {
     font-weight: lighter;
     line-height: 2;
 }
-.article-subtitle {
-    color: #909AA0;
-    margin-bottom: 3rem;
-}
+
 .article-body {
     line-height: 1.4;
     margin: 0 6rem;
@@ -100,6 +83,9 @@ div.column.is-8:first-child {
     margin: 1rem 5rem;
 }
 
+.contact {
+    margin: 5rem 0;
+}
 .footer {
     padding-bottom: 3rem;
 }
